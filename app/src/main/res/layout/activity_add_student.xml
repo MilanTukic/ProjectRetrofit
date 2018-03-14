@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.tukic.projectretrofit.activities.AddStudentActivity">
+
+
+<TextView
+    android:textStyle="bold"
+    android:layout_marginTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="First name:"
+    android:id="@+id/fname"
+    android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="85dp"
+         />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="68dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last name:"
+        android:id="@+id/lname"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/addLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addName"
+        android:layout_marginLeft="85dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Index number:"
+        android:id="@+id/inNum"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/addIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addLastName"
+        android:layout_marginLeft="105dp"/>
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddStudent"
+        android:background="@drawable/ic_person_add_black_24dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="320dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_response"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddStudent"/>
+
+</RelativeLayout>
